@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+body {
+  background-color: #26282C; }
+
+#reactor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 25vh 25vw; }
+
+#drum-machine {
+  width: auto;
+  background-color: #9068BE;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex; }
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px; }
+
+#pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 10px; }
+
+.drum-pad {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid blue;
+  background-color: blue;
+  background-image: linear-gradient(#E62739, #F7384A);
+  text-decoration: none;
+  color: #000;
+  font-size: 75px;
+  font-family: sans-serif;
+  font-weight: 700; }
+
+.inactivePad {
+  box-shadow: 1px 1px red; }
+
+.activePad {
+  background-color: #6ED3CF;
+  color: #FFF;
+  box-shadow: 5px 5px #6ED3CF; }
+
+#selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+#display {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: #E1E8F0;
+  border-radius: 5px; }
+
+#sound-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px; }
+
+.sound-selector-p {
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px; }
+
+#selector-button {
+  background-color: black;
+  width: 100%;
+  min-height: 20px;
+  border: 2px solid black; }
+
+#selector-drums {
+  text-align: center;
+  background-color: #E62739;
+  float: left;
+  min-width: 50%;
+  min-height: 20px; }
+
+#selector-piano {
+  text-align: center;
+  background-color: #E62739;
+  float: right;
+  min-width: 50%;
+  min-height: 20px; }
